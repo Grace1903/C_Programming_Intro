@@ -1,5 +1,5 @@
 /* print the character stored in the variable a
-*/
+ */
 
 #include <stdio.h>
 
