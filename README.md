@@ -1,1 +1,2 @@
-# c_programming_lessons
+## Programming Lessons in C
+
