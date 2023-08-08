@@ -1,2 +1,1 @@
-## Programming Lessons in C
-
+# Programming Lessons in C
