@@ -1,17 +1,41 @@
 
 #include <stdio.h>
 
-void square(int i, char c) {
-
-    printf("c = %d\n", c);
-
-    printf("%d => %d\n", i, i * i);
-}
+int pow1(int a, int b);
+void pow2(int a, int b);
 
 int main(int argc, char const *argv[])
 {
-    for (int i = 0; i < 5; i++)
-        square(i, '1');
-    
+    int result;
+
+   //  result =  2 ^ 5 + 3 ^ 7
+   result = pow1(2, 5) + pow1(3, 7);
+   
+   printf("result: %d\n", result);
+
     return 0;
+}
+
+int pow1(int a, int b)
+{
+    int p = 1;
+
+    for (int i = 0; i < b; i++) {
+        p = p * a;
+    }
+
+    return p;
+}
+
+void pow2(int a, int b)
+{
+    int p = 1;
+
+    for (int i = 0; i < b; i++) {
+        p = p * a;
+    }
+
+    printf("%d ^ %d = %d\n", a, b, p);
+
+    return;
 }
